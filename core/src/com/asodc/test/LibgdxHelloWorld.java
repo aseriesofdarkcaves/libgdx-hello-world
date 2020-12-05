@@ -6,6 +6,9 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
+/**
+ * This is the class/portion of the project where the game code resides.
+ */
 public class LibgdxHelloWorld extends ApplicationAdapter {
 	SpriteBatch batch;
 	Texture img;
