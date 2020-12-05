@@ -1,4 +1,9 @@
-sourceCompatibility = 1.7
+// Attempt to force JDK 1.8 - may have to change project structure in IntelliJ too...
+compileJava {
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+}
+
 sourceSets.main.java.srcDirs = [ "src/" ]
 sourceSets.main.resources.srcDirs = ["../core/assets"]
 
