@@ -1,10 +1,9 @@
 package com.asodc.test.desktop;
 
+import com.asodc.test.LibgdxHelloWorld;
 import com.badlogic.gdx.Application;
-import com.badlogic.gdx.Graphics;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.asodc.test.LibgdxHelloWorld;
 
 /**
  * So this is the main entry point for launching the Desktop app.
@@ -18,7 +17,7 @@ public class DesktopLauncher {
         // I suppose you only need a reference to this if you're going to change it?
         LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 
-        // fields are public so I assume the idea is to manupulate them...
+        // fields are public so I assume the idea is to manipulate them...
 
         // fairly self-explanitory
 //		config.addIcon();
@@ -34,7 +33,7 @@ public class DesktopLauncher {
 //        Graphics.DisplayMode displayMode = LwjglApplicationConfiguration.getDesktopDisplayMode();
 
         // makes sense that you would plop one of the display modes from above in here
-		// I guess the idea is to allow a user to configure the application?
+        // I guess the idea is to allow a user to configure the application?
 //        config.setFromDisplayMode(displayMode);
 
         // ***** LwjglApplication *****
@@ -46,6 +45,6 @@ public class DesktopLauncher {
         // do various things
         myApp.setLogLevel(Application.LOG_DEBUG);
         myApp.debug("DEBUG", "The application should now be running...");
-		myApp.getGraphics().setTitle("LibgdxHelloWorld");
+        myApp.getGraphics().setTitle("LibgdxHelloWorld");
     }
 }
